@@ -138,7 +138,6 @@ const calculate = function() {
 
         digit1 = displayDigit.textContent;
         
-        // if(symbol === null){
             displaySymbol.textContent = digit1;
             displaySymbol.append();
 
@@ -146,9 +145,7 @@ const calculate = function() {
             displayDigit.textContent = digit1;
             displayDigit.append()
             return;
-        // }
 
-        // digit1 = per(digit1);
 
     }
 

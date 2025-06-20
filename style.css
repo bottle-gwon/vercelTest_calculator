@@ -30,6 +30,8 @@ html, body{
     border-radius: 10px;
     width: 500px;
     background-color: silver;
+    box-shadow: inset 3px 3px 7px 5px #ffffff73, inset -3px -3px 5px  8px rgba(94, 104, 121, .288), 0 0 4px 1px black;
+
 
 }
 .cal-author{
@@ -57,25 +59,28 @@ html, body{
 #red{
     width: 15px;
     height: 15px;
+    margin-top: 10px;
     border-radius: 50%;
     border: 0;
-    background-color: red;
+    background-color: rgb(236, 106, 94);
 }
 
 #yellow{
     width: 15px;
     height: 15px;
+    margin-top: 10px;
     border-radius: 50%;
     border: 0;
-    background-color: rgb(255, 187, 0);
+    background-color: rgb(244, 191, 79);
 }
 
 #green{
     width: 15px;
     height: 15px;
+    margin-top: 10px;
     border-radius: 50%;
     border: 0;
-    background-color: green;
+    background-color: rgb(97, 197, 43);
 }
 
 .cal-deco{
@@ -94,6 +99,7 @@ html, body{
     background-color: grey;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
+    border: black solid 1px;
 
 }
 .cal-display{
@@ -118,6 +124,7 @@ html, body{
     width: 420px;
     overflow-x: auto;
     */
+    box-shadow: inset black 0 0 4px 1px;
     
 }
 
@@ -163,6 +170,13 @@ html, body{
     margin-bottom: 10px;
     padding: 10px;
     
+}
+
+#cal-sign{
+    font-family: cursive;
+    font-size: 0.7rem;
+    grid-column-start: 1 ;
+    grid-column-end: 4;
 }
 .cal-btn{
     margin: 5px;
