@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size:50px;
+}
+
+html, body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.cal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+    background-color: silver;
+
+}
+.cal-author{
+    display: flex;
+
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 5px;
+}
+.cal-author>p{
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    font-size: 0.5rem;
+}
+.cal-decoration{
+    display: flex;
+}
+.cal-close{
+    display: flex;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 60px;
+}
+#red{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+}
+
+#yellow{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(255, 187, 0);
+}
+
+#green{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 0;
+    background-color: green;
+}
+
+.cal-deco{
+    width: 25px;
+    height: 30px;
+    background-color: rgb(87, 36, 36);
+    border: 1px solid black;
+}
+
+.cal-display-deco{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    height: 120px;
+    background-color: grey;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+}
+.cal-display{
+    display: block;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-end; */
+    
+    width: 420px;
+    height: 2rem;
+    margin-top: 3px;
+    border: 1px solid black;
+    background-color:darkseagreen;
+    font-family:monospace;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* text-align: right; */
+    direction: rtl;
+    
+    /* display: block;
+    width: 420px;
+    overflow-x: auto;
+    */
+    
+}
+
+
+#calSymbol{
+    margin: 0;
+    font-size: 0.5rem;
+    unicode-bidi: plaintext;
+    text-align: right;
+
+
+}
+#calDigit{
+    width: max-content;
+    text-align: right;
+    unicode-bidi: plaintext;
+
+    /* white-space: nowrap;  */
+    margin: 0;
+}
+
+.cal-digit-over{
+    font-size: 0.5rem;
+}
+
+.cal-display > hr{
+    margin: 0;
+    margin-bottom: 10px;
+    border: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+
+
+.cal-button{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+.cal-btn{
+    margin: 5px;
+    font-size: 1.5rem;
+    color:whitesmoke;
+    background-color: rgb(1, 1, 74);
+    border-radius: 10px;
+    box-shadow: black 0 0 2px 0.5px;
+
+}
+
+.cal-btn:hover{
+    background-color: rgb(97, 97, 201);
+}
+
+.cal-btn:active{
+    background-color: rgb(4, 4, 61);
+}
+
+#symbolPlu{
+    grid-column-start: 5;
+
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+#symbolBack{
+    grid-column-start: 4;
+}
+
+#num0{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#symbolCle{
+    background-color: crimson;
+} 
+
+#symbolCle:hover{
+    background-color: rgb(246, 67, 103);
+
+}
+
+#symbolCle:active{
+    background-color: rgb(107, 0, 21);
+}
